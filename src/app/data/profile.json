@@ -1,0 +1,31 @@
+{
+  "nama": "Arimbi Salsabila",
+  "nim": "242505019",
+  "prodi": "Sistem Informasi",
+  "semester": 5,
+  "profesi": "Information Systems Student",
+  "deskripsi": "Saya adalah mahasiswa Sistem Informasi yang memiliki ketertarikan pada pengembangan aplikasi mobile, teknologi informasi, dan desain antarmuka pengguna.",
+  "email": "arimbi@example.com",
+  "skills": [
+    "JavaScript",
+    "React Native",
+    "HTML & CSS",
+    "PHP",
+    "MySQL",
+    "UI Design"
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "judul": "Sistem Informasi Pengarsipan Surat",
+      "kategori": "Web Development",
+      "deskripsi": "Aplikasi pengarsipan surat masuk berbasis web."
+    },
+    {
+      "id": "2",
+      "judul": "Aplikasi Data Mahasiswa",
+      "kategori": "Mobile Development",
+      "deskripsi": "Aplikasi sederhana untuk mengelola data mahasiswa."
+    }
+  ]
+}

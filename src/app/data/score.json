@@ -1,0 +1,29 @@
+{
+  "mataKuliah": "Pemrograman Mobile 2",
+  "dosen": "Iin, M.Kom",
+  "nilai": 89,
+  "grade": "A",
+  "learningPoints": 12375,
+  "progress": [
+    {
+      "id": "1",
+      "nama": "Attendance",
+      "persentase": 100
+    },
+    {
+      "id": "2",
+      "nama": "Practice",
+      "persentase": 87
+    },
+    {
+      "id": "3",
+      "nama": "Quest",
+      "persentase": 95
+    },
+    {
+      "id": "4",
+      "nama": "Challenge",
+      "persentase": 100
+    }
+  ]
+}

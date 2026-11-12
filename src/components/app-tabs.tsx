@@ -1,32 +1,69 @@
-import { NativeTabs } from 'expo-router/unstable-native-tabs';
-import { useColorScheme } from 'react-native';
-
-import { Colors } from '@/constants/theme';
+import { Tabs } from "expo-router";
 
 export default function AppTabs() {
-  const scheme = useColorScheme();
-  const colors = Colors[scheme === 'unspecified' ? 'light' : scheme];
-
   return (
-    <NativeTabs
-      backgroundColor={colors.background}
-      indicatorColor={colors.backgroundElement}
-      labelStyle={{ selected: { color: colors.text } }}>
-      <NativeTabs.Trigger name="index">
-        <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/home.png')}
-          renderingMode="template"
-        />
-      </NativeTabs.Trigger>
+    <Tabs
+      screenOptions={{
+        headerShown: false,
+        tabBarActiveTintColor: "#167D75",
+        tabBarInactiveTintColor: "#94A3B8",
 
-      <NativeTabs.Trigger name="explore">
-        <NativeTabs.Trigger.Label>Explore</NativeTabs.Trigger.Label>
-        <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/explore.png')}
-          renderingMode="template"
-        />
-      </NativeTabs.Trigger>
-    </NativeTabs>
+        tabBarStyle: {
+          backgroundColor: "#FFFFFF",
+          borderTopColor: "#DCECE9",
+          height: 110,
+          paddingBottom: 25,
+          paddingTop: 10,
+        },
+
+        tabBarLabelStyle: {
+          fontSize: 17,
+          fontWeight: "bold",
+        },
+      }}
+    >
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: "Home",
+          tabBarLabel: "🏠 HOME",
+          tabBarIcon: () => null,
+        }}
+      />
+
+      <Tabs.Screen
+        name="portfolio"
+        options={{
+          title: "Portfolio",
+          tabBarLabel: "💼 PORTFOLIO",
+          tabBarIcon: () => null,
+        }}
+      />
+
+      <Tabs.Screen
+        name="score"
+        options={{
+          title: "My Score",
+          tabBarLabel: "🎓 MY SCORE",
+          tabBarIcon: () => null,
+        }}
+      />
+
+      <Tabs.Screen
+        name="contact"
+        options={{
+          title: "Contact",
+          tabBarLabel: "💬 CONTACT",
+          tabBarIcon: () => null,
+        }}
+      />
+
+      <Tabs.Screen
+        name="explore"
+        options={{
+          href: null,
+        }}
+      />
+    </Tabs>
   );
 }
